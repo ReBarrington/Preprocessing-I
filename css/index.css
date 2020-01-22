@@ -2,6 +2,20 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@font-face {
+  font-family: 'Amatic SC';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Amatic SC Regular'), local('AmaticSC-Regular'), url(https://fonts.gstatic.com/s/amaticsc/v13/TUZyzwprpvBS1izr_vOECuSa.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Libre Caslon Text';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Libre Caslon Text Regular'), local('LibreCaslonText-Regular'), url(https://fonts.gstatic.com/s/librecaslontext/v1/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-c.ttf) format('truetype');
+}
 html,
 body,
 div,
@@ -129,11 +143,90 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
-  border: 1px gray solid;
-  margin: 0;
-  padding: 0;
+  max-width: 100%;
 }
 html,
 body {
   height: 100%;
+  padding: 10%;
+  font-size: 62.5%;
+  border: 2px solid gray;
+  margin: 0;
+  padding: 4%;
+}
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+header h1 {
+  width: 100%;
+  font-family: 'Amatic SC', cursive;
+  font-size: 10rem;
+  text-align: center;
+  padding: 2%;
+}
+header nav {
+  border: 2px solid gray;
+  padding: 3%;
+  width: 100%;
+  font-family: 'Amatic SC', cursive;
+  font-size: 2.5rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2%;
+}
+header nav a {
+  text-decoration: none;
+  color: black;
+}
+.photoCont {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.photoCont img {
+  width: 80%;
+  padding: 2%;
+  border: black 10px solid;
+}
+.photoCont p {
+  width: 100%;
+  font-family: 'Libre Caslon Text', serif;
+  font-size: 1.5rem;
+  padding: 4%;
+}
+#two {
+  font-family: 'Libre Caslon Text', serif;
+  font-size: 1.5rem;
+  padding: 4%;
+  padding: 10%;
+  border: black 5px solid;
+  background: lightslategray;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+}
+#two .defeats,
+#two .skills {
+  background: white;
+  padding: 3%;
+  border: black 2px solid;
+}
+#two h3 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 4rem;
+  text-align: center;
+}
+#two ul {
+  line-height: 1.5;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#two ul .skills li {
+  align-items: center;
 }
