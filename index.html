@@ -3,9 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
-  <title>My Resume</title>
-
+  <title>The Witcher's Resume</title>
   <link rel="stylesheet" href="css/index.css">
 
   <!--[if lt IE 9]>
@@ -14,6 +12,65 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <header>
+  <h1>Geralt of Rivia</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+  </header>
+  <div class="photoCont">
+    <img src="img/castle.jpg" alt="castle">
+    <p> Geralt of Rivia is a legendary witcher from the School of the Wolf. He can take care of any monster problem you may have with a simple toss of coin. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eligendi vero molestias! Doloremque laboriosam neque inventore corrupti? Provident doloremque aut, cum dolore ullam assumenda nobis sed fugiat. Autem, beatae ipsam!</p>
+  </div>
+  <section id="two">
+    <div class="defeats">
+      <h3>succcessfully defeated:</h3>
+      <ul>
+        <li>Werewolves</li>
+        <li>Ghouls</li>
+        <li>Dragons</li>
+        <li>Strigas</li>
+        <li>Wyverns</li>
+        <li>Wolves</li>
+      </ul>
+    </div>
+    <div class="skills">
+        <h3>Skills:</h3>
+        <ul>
+          <li>Swordsmanship</li>
+          <li>Knife-throwing</li>
+          <li>Archery</li>
+          <li>Muscle Memory</li>
+          <li>Survival Instinct</li>
+        </ul>
+      </div>
+    </section>
+  <section id="final">
+    <form action="action_page.php">
+        <h2>Contact</h2>
+      <section class="name">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." >
+      </section>
+      <section>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </section>
+      <section>
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+      </section>
+      <section>
+        <input type="submit" value="Submit">
+      </section>
+
+  </section>
 </body>
 </html>

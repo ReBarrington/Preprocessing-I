@@ -4,6 +4,9 @@
    License: none (public domain)
 */
 
+//import fonts
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Libre+Caslon+Text&display=swap');
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -50,10 +53,185 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	max-width: 100%;
+}
+
+// VARIABLES
+@title-font: 'Amatic SC', cursive;
+@main-font: 'Libre Caslon Text', serif;
+
+// MIX-INS
+.mainText() {
+	font-family: @main-font;
+	font-size: 1.5rem;
+	padding: 4%;
+}
+
+.colorTheme() {
+	color: black;
+	background-color: lightslategray;
+}
+
+html {
+	padding: 10%;
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-size: 62.5%;
 }
 
+header {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	h1 {
+		width: 100%;
+		font-family: @title-font;
+		font-size: 10rem;
+		text-align: center;
+		padding: 2%;
+
+		@media (max-width:500px){
+			font-size: 7rem;
+			margin: 5%;
+		}	
+	}
+
+	nav {
+		border: 5px solid black;
+		background-color: lightslategray;
+		padding: 2%;
+		width: 100%;
+		font-family: @title-font;
+		font-size: 2.5rem;
+		text-decoration: none;
+		display: flex;
+		justify-content: space-evenly;
+		margin-bottom: 2%;
+
+		@media (max-width:500px) {
+			flex-direction: column;
+			align-items: center;
+			background-image: url(../img/castle.jpg);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+
+		a {
+			text-decoration: none;
+			border: 2px black solid;
+			color: black;
+			background-color: white;
+			padding: 1%;
+			
+			@media (max-width:500px) {
+				margin: 2%;
+				font-size: 4rem;
+				margin: 5%;
+			}
+		}
+	}
+}
+
+.photoCont {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	img {
+		width: 80%;
+		padding: 2%;
+		border: black 10px solid;
+
+		@media (max-width:500px){
+			display: none;
+		}
+	}
+
+	p {
+		width: 100%;
+		.mainText();
+	}
+}
+
+#two {
+	.mainText();
+	padding: 5%;
+	border: black 5px solid;
+	background: lightslategray;
+	display: flex;
+	justify-content: space-evenly;
+	align-content: center;
+
+	.defeats, .skills {
+		background: white;
+		padding: 4%;
+		border: black 2px solid;
+		width: 45%;
+	}
+	
+	h3 {
+		font-family: @title-font;
+		font-size: 4rem;
+		text-align: center;
+
+		@media (max-width:500px){
+			font-size: 2rem;
+		}		
+	}
+
+	ul {
+		line-height: 1.5;
+		padding: 2%;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		@media(max-width:500px){
+			font-size: 1rem;
+		}
+
+	}
+}
+
+#final {
+	margin-bottom: 5%;
+
+	h2 {
+		font-family: @title-font;
+		font-size: 3rem;
+	}
+	form {
+		border: 5px solid black;
+		border-top: none;
+		line-height: 2;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		flex-wrap: wrap;
+		padding-bottom: 3%;
+
+		h2 {
+			width: 100%;
+			text-align: center;
+		}
+
+		section {
+			width: 50%;
+			font-size: 2rem;
+			text-align: center;
+
+			@media(max-width:500px){
+				font-size: 1rem;
+				align-items: center;
+				width: 100%;
+			}
+		}
+	}
+}

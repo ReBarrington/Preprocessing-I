@@ -1,1 +1,303 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@font-face {
+  font-family: 'Amatic SC';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Amatic SC Regular'), local('AmaticSC-Regular'), url(https://fonts.gstatic.com/s/amaticsc/v13/TUZyzwprpvBS1izr_vOECuSa.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Libre Caslon Text';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Libre Caslon Text Regular'), local('LibreCaslonText-Regular'), url(https://fonts.gstatic.com/s/librecaslontext/v1/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-c.ttf) format('truetype');
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+html {
+  padding: 10%;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+}
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+header h1 {
+  width: 100%;
+  font-family: 'Amatic SC', cursive;
+  font-size: 10rem;
+  text-align: center;
+  padding: 2%;
+}
+@media (max-width: 500px) {
+  header h1 {
+    font-size: 7rem;
+    margin: 5%;
+  }
+}
+header nav {
+  border: 5px solid black;
+  background-color: lightslategray;
+  padding: 2%;
+  width: 100%;
+  font-family: 'Amatic SC', cursive;
+  font-size: 2.5rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2%;
+}
+@media (max-width: 500px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/castle.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+header nav a {
+  text-decoration: none;
+  border: 2px black solid;
+  color: black;
+  background-color: white;
+  padding: 1%;
+}
+@media (max-width: 500px) {
+  header nav a {
+    margin: 2%;
+    font-size: 4rem;
+    margin: 5%;
+  }
+}
+.photoCont {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.photoCont img {
+  width: 80%;
+  padding: 2%;
+  border: black 10px solid;
+}
+@media (max-width: 500px) {
+  .photoCont img {
+    display: none;
+  }
+}
+.photoCont p {
+  width: 100%;
+  font-family: 'Libre Caslon Text', serif;
+  font-size: 1.5rem;
+  padding: 4%;
+}
+#two {
+  font-family: 'Libre Caslon Text', serif;
+  font-size: 1.5rem;
+  padding: 4%;
+  padding: 5%;
+  border: black 5px solid;
+  background: lightslategray;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+}
+#two .defeats,
+#two .skills {
+  background: white;
+  padding: 4%;
+  border: black 2px solid;
+  width: 45%;
+}
+#two h3 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 4rem;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  #two h3 {
+    font-size: 2rem;
+  }
+}
+#two ul {
+  line-height: 1.5;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  #two ul {
+    font-size: 1rem;
+  }
+}
+#final {
+  margin-bottom: 5%;
+}
+#final h2 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 3rem;
+}
+#final form {
+  border: 5px solid black;
+  border-top: none;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 3%;
+}
+#final form h2 {
+  width: 100%;
+  text-align: center;
+}
+#final form section {
+  width: 50%;
+  font-size: 2rem;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  #final form section {
+    font-size: 1rem;
+    align-items: center;
+    width: 100%;
+  }
+}
