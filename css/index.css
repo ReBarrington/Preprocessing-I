@@ -145,13 +145,13 @@ table {
   box-sizing: border-box;
   max-width: 100%;
 }
+html {
+  padding: 10%;
+}
 html,
 body {
   height: 100%;
-  padding: 10%;
   font-size: 62.5%;
-  margin: 0;
-  padding: 4%;
 }
 header {
   display: flex;
@@ -174,7 +174,7 @@ header h1 {
 header nav {
   border: 5px solid black;
   background-color: lightslategray;
-  padding: 3%;
+  padding: 2%;
   width: 100%;
   font-family: 'Amatic SC', cursive;
   font-size: 2.5rem;
@@ -198,7 +198,7 @@ header nav a {
   border: 2px black solid;
   color: black;
   background-color: white;
-  padding: 2%;
+  padding: 1%;
 }
 @media (max-width: 500px) {
   header nav a {
@@ -268,17 +268,22 @@ header nav a {
     font-size: 1rem;
   }
 }
+#final {
+  margin-bottom: 5%;
+}
 #final h2 {
   font-family: 'Amatic SC', cursive;
   font-size: 3rem;
 }
 #final form {
   border: 5px solid black;
+  border-top: none;
   line-height: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
+  padding-bottom: 3%;
 }
 #final form h2 {
   width: 100%;
