@@ -150,7 +150,6 @@ body {
   height: 100%;
   padding: 10%;
   font-size: 62.5%;
-  border: 2px solid gray;
   margin: 0;
   padding: 4%;
 }
@@ -166,8 +165,14 @@ header h1 {
   text-align: center;
   padding: 2%;
 }
+@media (max-width: 500px) {
+  header h1 {
+    font-size: 7rem;
+  }
+}
 header nav {
-  border: 2px solid gray;
+  border: 5px solid black;
+  background-color: lightslategray;
   padding: 3%;
   width: 100%;
   font-family: 'Amatic SC', cursive;
@@ -177,9 +182,27 @@ header nav {
   justify-content: space-evenly;
   margin-bottom: 2%;
 }
+@media (max-width: 500px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/castle.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 header nav a {
   text-decoration: none;
+  border: 2px black solid;
   color: black;
+  background-color: white;
+  padding: 2%;
+}
+@media (max-width: 500px) {
+  header nav a {
+    margin: 2%;
+  }
 }
 .photoCont {
   display: flex;
@@ -191,6 +214,11 @@ header nav a {
   padding: 2%;
   border: black 10px solid;
 }
+@media (max-width: 500px) {
+  .photoCont img {
+    display: none;
+  }
+}
 .photoCont p {
   width: 100%;
   font-family: 'Libre Caslon Text', serif;
@@ -201,7 +229,7 @@ header nav a {
   font-family: 'Libre Caslon Text', serif;
   font-size: 1.5rem;
   padding: 4%;
-  padding: 10%;
+  padding: 5%;
   border: black 5px solid;
   background: lightslategray;
   display: flex;
@@ -211,22 +239,57 @@ header nav a {
 #two .defeats,
 #two .skills {
   background: white;
-  padding: 3%;
+  padding: 4%;
   border: black 2px solid;
+  width: 45%;
 }
 #two h3 {
   font-family: 'Amatic SC', cursive;
   font-size: 4rem;
   text-align: center;
 }
+@media (max-width: 500px) {
+  #two h3 {
+    font-size: 2rem;
+  }
+}
 #two ul {
   line-height: 1.5;
   padding: 2%;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   align-items: center;
 }
-#two ul .skills li {
+@media (max-width: 500px) {
+  #two ul {
+    font-size: 1rem;
+  }
+}
+#final h2 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 3rem;
+}
+#final form {
+  border: 5px solid black;
+  line-height: 5;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
+}
+#final form h2 {
+  width: 100%;
+  text-align: center;
+}
+#final form section {
+  width: 50%;
+  font-size: 2rem;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  #final form section {
+    font-size: 1rem;
+    align-items: center;
+    width: 100%;
+  }
 }
