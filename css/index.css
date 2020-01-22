@@ -129,6 +129,9 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
+  border: 1px gray solid;
+  margin: 0;
+  padding: 0;
 }
 html,
 body {
