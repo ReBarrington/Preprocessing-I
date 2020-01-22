@@ -168,6 +168,7 @@ header h1 {
 @media (max-width: 500px) {
   header h1 {
     font-size: 7rem;
+    margin: 5%;
   }
 }
 header nav {
@@ -202,6 +203,8 @@ header nav a {
 @media (max-width: 500px) {
   header nav a {
     margin: 2%;
+    font-size: 4rem;
+    margin: 5%;
   }
 }
 .photoCont {
